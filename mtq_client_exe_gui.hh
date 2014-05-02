@@ -31,6 +31,8 @@ private slots:
     void open_simple_egg_filename_dialog();
     void open_full_egg_filename_dialog();
 
+    void on_DescriptionButton_toggled(bool checked);
+
     void on_runEnabledButton_stateChanged(int state);
 
     void on_runButton_clicked();
