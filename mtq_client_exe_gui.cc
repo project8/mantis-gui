@@ -22,6 +22,8 @@ q_client_exe_gui::q_client_exe_gui( QWidget *parent ) :
     ui->setupUi( this );
     ui->ConfigFilename->setText( f_default_filename_text );
 
+    this->setFixedWidth(this->geometry().width());
+
     // close the description
     on_DescriptionButton_toggled( false );
 
