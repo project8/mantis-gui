@@ -9,10 +9,12 @@ QT       += core gui
 TARGET = mantis-gui
 TEMPLATE = app
 
-INCLUDEPATH += /Users/nsoblath/My_Documents/Project_8/DataAnalysis/mantis/build-master/include \
-    /Users/nsoblath/My_Documents/Project_8/DataAnalysis/mantis/RapidJSON
+MANTISDIR = /home/project8/Dev/mantis/cbuild
+
+INCLUDEPATH += $$MANTISDIR/include \
+    $$MANTISDIR/../RapidJSON
 LIBS += -L/usr/local/lib -lprotobuf \
-    -L/Users/nsoblath/My_Documents/Project_8/DataAnalysis/mantis/build-master/lib \
+    -L$$MANTISDIR/lib \
     -lMantisClient \
     -lMonarchCore \
     -lboost_atomic \
